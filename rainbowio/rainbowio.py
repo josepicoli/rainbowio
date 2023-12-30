@@ -1,4 +1,15 @@
-def print_rgb(color, text):
+def print_rgb(color: str, text: str):
+    """
+    Reads the color and text and prints the text with the specified color\n
+    Some of the colors are:\n
+    *red*
+    *green*
+    *blue*\n
+    *yellow*
+    *magenta*
+    *cyan*
+    *white*
+    """
     match color:
         case "red":
             print(f"\033[91m{text}\033[0m")
@@ -15,7 +26,18 @@ def print_rgb(color, text):
         case "white":
             print(f"\033[97m{text}\033[0m")
 
-def input_rgb(color, text):
+def input_rgb(color: str, text: str):
+    """
+    Reads the color and text and creates the input with the specified color and text\n
+    Some of the colors are:\n
+    *red*
+    *green*
+    *blue*\n
+    *yellow*
+    *magenta*
+    *cyan*
+    *white*
+    """
     match color:
         case "red":
             return input(f"\033[91m{text}\033[0m")
